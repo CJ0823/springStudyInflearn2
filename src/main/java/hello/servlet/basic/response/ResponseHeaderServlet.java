@@ -32,11 +32,12 @@ public class ResponseHeaderServlet extends HttpServlet {
         cookie.setMaxAge(600);
         response.addCookie(cookie);
 
-        response.getWriter().println("ok");
 
         //redirect
 //        response.setStatus(HttpServletResponse.SC_FOUND); //302
 //        response.setHeader("Location", "/basic/hello-form.html");
         response.sendRedirect("/basic/hello-form.html");
+
+        response.getWriter().println("ok");
     }
 }
