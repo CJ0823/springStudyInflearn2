@@ -28,7 +28,7 @@ dependencies {
 
 	//JSP
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
-	implementation 'java.servlet:jstl'
+	implementation 'javax.servlet:jstl'
 }
 
 test {

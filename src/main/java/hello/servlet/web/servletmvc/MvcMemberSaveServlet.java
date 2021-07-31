@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "MvcMemberSaveServlet", urlPatterns = "/servlet-mvc/members/save")
+@WebServlet(name = "mvcMemberSaveServlet", urlPatterns = "/servlet-mvc/members/save")
 public class MvcMemberSaveServlet extends HttpServlet {
 
   private MemberRepository memberRepository = MemberRepository.getInstance();
@@ -27,7 +27,7 @@ public class MvcMemberSaveServlet extends HttpServlet {
 
     //Model에 데이터를 보관한다.
     request.setAttribute("member", member);
-    String viewPath = "WEB-INF/views/save-result.jsp";
+    String viewPath = "/WEB-INF/views/save-result.jsp";
     RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
     dispatcher.forward(request, response);
   }

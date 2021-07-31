@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "MemberSaveServlet", urlPatterns = "/servlet/members/save")
+@WebServlet(name = "memberSaveServlet", urlPatterns = "/servlet/members/save")
 public class MemberSaveServlet extends HttpServlet {
 
   private MemberRepository memberRepository = MemberRepository.getInstance();
